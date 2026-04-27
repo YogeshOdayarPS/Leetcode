@@ -1,25 +1,14 @@
 class Solution {
     public boolean isThree(int n) {
-        int m=1;
-        int k=1;
-        int c=0;
-        int original=n;
-        for(k=1;k<=n;k++){ //2
-            for(m=1;m<=n;m++){//3
-            original=k*m; //3*2=6
-            
-            if(original==n){//2==4
-                c++;
-                
-            }
-            }
-            
+        int root = (int) Math.sqrt(n);
+
+        if (root * root != n) return false;
+
+
+        for (int i = 2; i * i <= root; i++) {
+            if (root % i == 0) return false;
         }
-        if(c==3){
-            return true;
-        }
-        else{
-            return false;
-        }
+
+        return root > 1;
     }
 }
