@@ -1,3 +1,4 @@
+
 class Solution {
     public int minOperations(int[] nums, int k) {
         
@@ -9,4 +10,5 @@ class Solution {
 
         return sum % k;
     }
-}
+} 
+ 
