@@ -8,9 +8,7 @@ class Solution {
             else if(operations[i].equals("X++")){
                 X+=1;
             }
-            else if(operations[i].equals("X--")){
-                X-=1;
-            }
+            
             else{
                 X-=1;
             }
