@@ -8,7 +8,7 @@ class Solution {
             }
         }
         int max=count;
-        for(int i=k;i<s.length();i++){
+        for(int i=k;i<arr.length;i++){
             if(arr[i-k]=='a'|| arr[i-k]=='e'||arr[i-k]=='i'||arr[i-k]=='o'||arr[i-k]=='u'){
                 count--;
         }
