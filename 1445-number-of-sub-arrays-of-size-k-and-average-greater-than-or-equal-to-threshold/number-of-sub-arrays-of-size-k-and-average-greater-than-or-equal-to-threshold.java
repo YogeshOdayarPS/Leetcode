@@ -6,9 +6,9 @@ class Solution {
 
         for(int i=0;i<k;i++){
             sum+=arr[i];
-            
+           avg=sum/k; 
         }
-        avg=sum/k;
+        
             if(avg>=threshold){
                 count++;
             }
